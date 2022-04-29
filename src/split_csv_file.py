@@ -90,12 +90,8 @@ def output_csv(output_file_base:str, split_key:str, header_line:str, raw_line:st
     return
 
 
-def main():
+if __name__=='__main__':
     input_file = './input/owid-covid-data.csv'
     output_dir = './output'
     
     split_csv_file(input_file, output_dir, 3)
-
-
-if __name__=='__main__':
-    main()
